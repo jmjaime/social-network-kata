@@ -12,4 +12,6 @@ data class User(
     fun addPost(post: Post) {
         this.posts.add(post)
     }
+
+    fun getPosts(): List<Post> = posts
 }

@@ -8,7 +8,7 @@ class UsersInMemory : Users {
     override fun findByUsername(userName: String): User? {
         return User(
                 userName = "pepe",
-                posts = listOf(
+                posts = mutableListOf(
                         Post(
                                 message = "Hello world!"
                         )
